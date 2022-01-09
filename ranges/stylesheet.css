@@ -1,0 +1,69 @@
+body{
+    background-color: antiquewhite;
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    font-size: 1em;
+}
+
+.point{
+    display: grid;
+    grid-template-areas:
+    'point point'
+    'portion portion';
+    text-align: center;
+}
+
+.point h3{
+    grid-area: 1 / 1 / 2 / 3;
+    margin-right: 1em;
+}
+
+
+h1{
+    text-transform: uppercase;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+.portion{
+    background-color: brown;
+    width: 10em;
+    height: 2em;
+    border-radius: .25em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+input{
+    padding: 1em;
+    border-radius: .25em;
+    border: 1px solid black;
+    margin: .50em;
+}
+
+#submit{
+    border-radius: 2em;
+    text-align: center;
+}
+
+
+#submit:hover{
+    cursor: pointer;
+    border-radius: 2em;
+}
