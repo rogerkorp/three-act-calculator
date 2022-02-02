@@ -13,98 +13,165 @@
             <h1>Three Act Calculator</h1>
 
             <section id="calculator-input">
-                <form>
-                    <label for="page-count">How many pages?</label>
-                    <input id="page-count" type="number" name="page-count" min=1 max=999999><br>
-                    <label for="chapter-count">How many parts?</label>
-                    <input id="chapter-count" type="number" name="chapter-count" min=1 max=999999><br>
-                    <input id="submit" type="button" value="Calculate!" onclick="runCalculator()">
-                </form>
+                <h2>Calculator Input</h2>
+                <div class="point" id="calc">
+                    <form>
+                        <label for="page-count">How many pages?</label>
+                        <input id="page-count" type="number" name="page-count" min=1 max=999999><br>
+                        <label for="chapter-count">How many parts?</label>
+                        <input id="chapter-count" type="number" name="chapter-count" min=1 max=999999><br>
+                        <input id="submit" type="button" value="Calculate!" onclick="runCalculator()">
+                    </form>
+                </div>
             </section>
            
             <section id="results">
-               
-                <h2>Act one</h2>
-                    
-                    <div class="point">
-                        <h3>The Hook</h3>
-                        <p class="portion" id="pg01">0000</p>
-                        <p class="portion" id="ch01">0000</p>
-                    </div>
-                   
-                    <div class="point">
-                        <h3>Inciting Incident</h3>
-                        <p class="portion" id="pg02">0000</p>
-                        <p class="portion" id="ch02">0000</p>
-                    </div>
+                <section class="act" id="act1">
+                    <h2>Act one</h2>
+                        <div class="point">
+                            <h3>The Hook</h3>
+                            <p class="description">A mysterious, exciting, or unexplained situation that gets readers invested in the story.</p>
+                            <div class="numbers">
+                                <p class="portion" id="pg01"></p>
+                                <p class="portion" id="ch01"></p>
+                                <p class="label">Pages</p>
+                                <p class="label">Part</p>
+                            </div>
+                        </div>
 
-                    <div class="point">
-                        <h3>First Plot Point</h3>
-                        <p class="portion" id="pg03">0000</p>
-                        <p class="portion" id="ch03">0000</p>
-                    </div>
+                        <div class="point">
+                            <h3>Inciting Incident</h3>
+                            <p class="description">An event that kicks off the main plot without breaking the status quo. Directs main characters to the first plot point.</p>
+                            <div class="numbers">
+                                <p class="portion" id="pg02"></p>
+                                <p class="portion" id="ch02"></p>
+                                <p class="label">Pages</p>
+                                <p class="label">Part</p>
+                            </div>
+                        </div>
 
-                <h2>Act two</h2>
+                        <div class="point">
+                            <h3>First Plot Point</h3>
+                            <p class="description">A status-quo breaking event that creates a new set of problems for the protagonist and ends the first act.</p>
+                            <div class="numbers">
+                                <p class="portion" id="pg03"></p>
+                                <p class="portion" id="ch03"></p>
+                                <p class="label">Page</p>
+                                <p class="label">Part</p>
+                            </div>
+                        </div>
+                </section>
 
-                    <div class="point">
-                        <h3>First Pinch Point</h3>
-                        <p class="portion" id="pg04">0000</p>
-                        <p class="portion" id="ch04">0000</p>
-                    </div>
 
+                <section class="act" id="act2">
+                    <h2>Act two</h2>
                     <div class="point">
-                        <h3>Midpoint</h3>
-                        <p class="portion" id="pg05">0000</p>
-                        <p class="portion" id="ch05">0000</p>
-                    </div>
-
-                    <div class="point">
-                        <h3>Second Pinch Point</h3>
-                        <p class="portion" id="pg06">0000</p>
-                        <p class="portion" id="ch06">0000</p>
-                    </div>
-
-                    <div class="point">
-                        <h3>Third Plot Point</h3>
-                        <p class="portion" id="pg07">0000</p>
-                        <p class="portion" id="ch07">0000</p>
-                    </div>
-                
+                            <h3>First Pinch Point</h3>
+                            <p class="description">A minor threat or setback that is usually related to the antagonist.</p>
+                            <div class="numbers">
+                                <p class="portion" id="pg04"></p>
+                                <p class="portion" id="ch04"></p>
+                                <p class="label">Pages</p>
+                                <p class="label">Part</p>
+                            </div>
+                        </div> 
+                        
+                        <div class="point">
+                            <h3>Midpoint</h3>
+                            <p class="description">A major truth is revealed that re-contextualizes the plot up to this point while also forcing the protagonist to face a setback.</p>
+                            <div class="numbers">
+                                <p class="portion" id="pg05"></p>
+                                <p class="portion" id="ch05"></p>
+                                <p class="label">Pages</p>
+                                <p class="label">Part</p>
+                            </div>
+                        </div> 
+                        
+                        <div class="point">
+                            <h3>Second Pinch Point</h3>
+                            <p class="description">A major threat or setback that is usually related to the antagonist.</p>
+                            <div class="numbers">
+                                <p class="portion" id="pg06"></p>
+                                <p class="portion" id="ch06"></p>
+                                <p class="label">Pages</p>
+                                <p class="label">Part</p>
+                            </div>
+                        </div> 
+                        
+                        <div class="point">
+                            <h3>Third Plot Point</h3>
+                            <p class="description">A major plot shakeup that brings the protagonist to thier lowest point.</p>
+                            <div class="numbers">
+                                <p class="portion" id="pg07"></p>
+                                <p class="portion" id="ch07"></p>
+                                <p class="label">Page</p>
+                                <p class="label">Part</p>
+                            </div>
+                        </div>
+                </section>
+      
+                <section class="act" id="act3">
                 <h2>Act three</h2>
-                    
                     <div class="point">
                         <h3>Hour of Darkness</h3>
-                        <p class="portion" id="pg08">0000</p>
-                        <p class="portion" id="ch08">0000</p>
+                        <p class="description">A period where the protagonist is set-back emotionally by the third plot point, and begins to reconsider thier goals.</p>
+                        <div class="numbers">
+                            <p class="portion" id="pg08"></p>
+                            <p class="portion" id="ch08"></p>
+                            <p class="label">Pages</p>
+                            <p class="label">Part</p>
+                        </div>
                     </div>
-
+                     
                     <div class="point">
                         <h3>Recovery</h3>
-                        <p class="portion" id="pg09">0000</p>
-                        <p class="portion" id="ch09">0000</p>
-                    </div>
-
+                        <p class="description">A period where the protagonist learns of a way to resolve thier major issue, refocuses thier efforts, and prepares to face it one final time.</p>
+                        <div class="numbers">
+                            <p class="portion" id="pg09"></p>
+                            <p class="portion" id="ch09"></p>
+                            <p class="label">Pages</p>
+                            <p class="label">Part</p>
+                        </div>
+                    </div> 
+                    
                     <div class="point">
                         <h3>Climax</h3>
-                        <p class="portion" id="pg10">0000</p>
-                        <p class="portion" id="ch10">0000</p>
-                    </div>
-
+                        <p class="description">The height of dramatic tension, where the protagonist directly confronts thier antagonist.</p>
+                        <div class="numbers">
+                            <p class="portion" id="pg10"></p>
+                            <p class="portion" id="ch10"></p>
+                            <p class="label">Pages</p>
+                            <p class="label">Part</p>
+                        </div>
+                    </div> 
+                    
                     <div class="point">
-                        <h3>Climactic Moment</h3>
-                        <p class="portion" id="pg11">0000</p>
-                        <p class="portion" id="ch11">0000</p>
-                    </div>
-
+                        <h3>Climactic moment</h3>
+                        <p class="description">Ends the climax in one quick moment, usually marked by the death of the antagonist or the reveal of a solution to the protagonists problems.</p>
+                        <div class="numbers">
+                            <p class="portion" id="pg11"></p>
+                            <p class="portion" id="ch11"></p>
+                            <p class="label">Page</p>
+                            <p class="label">Part</p>
+                        </div>
+                    </div> 
+                    
                     <div class="point">
                         <h3>Resolution</h3>
-                        <p class="portion" id="pg12">0000</p>
-                        <p class="portion" id="ch12">0000</p>
+                        <p class="description">A period where the story comes to a close, lowering the dramatic tension and resolving any lingering plot threads. Depending on the type of story, this depicts either the story's best possible outcome or it's worst possible outcome.</p>
+                        <div class="numbers">
+                            <p class="portion" id="pg12"></p>
+                            <p class="portion" id="ch12"></p>
+                            <p class="label">Pages</p>
+                            <p class="label">Part</p>
+                        </div>
                     </div>
-
+                </section>
             </section>
-
         </main>
+        <footer>
+            Created by Roger Korpics – February 2022
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>

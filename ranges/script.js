@@ -106,18 +106,18 @@ function runCalculator(){
     pg11.innerHTML = `${Math.ceil(pageArrayMin[10])}`;
     pg12.innerHTML = `${Math.ceil(pageArrayMin[11])} - ${Math.ceil(pageArrayMax[11])}`;
     
-    ch01.innerHTML = `${Math.round(chapterArray[0])}`;
-    ch02.innerHTML = `${Math.round(chapterArray[1])}`;
-    ch03.innerHTML = `${Math.round(chapterArray[2])}`;
-    ch04.innerHTML = `${Math.round(chapterArray[3])}`;
-    ch05.innerHTML = `${Math.round(chapterArray[4])}`;
-    ch06.innerHTML = `${Math.round(chapterArray[5])}`;
-    ch07.innerHTML = `${Math.round(chapterArray[6])}`;
-    ch08.innerHTML = `${Math.round(chapterArray[7])}`;
-    ch09.innerHTML = `${Math.round(chapterArray[8])}`;
-    ch10.innerHTML = `${Math.round(chapterArray[9])}`;
-    ch11.innerHTML = `${Math.round(chapterArray[10])}`;
-    ch12.innerHTML = `${Math.round(chapterArray[11])}`;
+    ch01.innerHTML = `${Math.ceil(chapterArray[0])}`;
+    ch02.innerHTML = `${Math.ceil(chapterArray[1])}`;
+    ch03.innerHTML = `${Math.ceil(chapterArray[2])}`;
+    ch04.innerHTML = `${Math.ceil(chapterArray[3])}`;
+    ch05.innerHTML = `${Math.ceil(chapterArray[4])}`;
+    ch06.innerHTML = `${Math.ceil(chapterArray[5])}`;
+    ch07.innerHTML = `${Math.ceil(chapterArray[6])}`;
+    ch08.innerHTML = `${Math.ceil(chapterArray[7])}`;
+    ch09.innerHTML = `${Math.ceil(chapterArray[8])}`;
+    ch10.innerHTML = `${Math.ceil(chapterArray[9])}`;
+    ch11.innerHTML = `${Math.ceil(chapterArray[10])}`;
+    ch12.innerHTML = `${Math.ceil(chapterArray[11])}`;
 
 }
 
